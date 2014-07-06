@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/adrianObel/rust-projectEuler.svg?branch=master)](https://travis-ci.org/adrianObel/rust-projectEuler)
 #rust-projectEuler
 
 Solving [Project Euler](http://www.projecteuler.net) problems is always a solid
