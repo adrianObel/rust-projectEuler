@@ -1,4 +1,4 @@
-#RustProjectEuler
+#rust-projectEuler
 
 Solving [Project Euler](http://www.projecteuler.net) problems is always a solid
 way to learning a new language.
