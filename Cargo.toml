@@ -1,14 +1,9 @@
 [package]
 
 name = "rust-projectEuler"
-version = "0.0.1"
+version = "1.2.1"
 authors = ["Adrian Obelmejias obeladrian@gmail.com"]
 
-# [[lib]]
-#
-# name = "problems"
-# # path = "problems/lib.rs"
-# #
 [[bin]]
 
 name = "projecteuler"
