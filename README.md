@@ -1,13 +1,21 @@
 #RustProjectEuler
 
-Solving [Project Euler](projecteuler.net) problems in rust and learning
-the language at the same time
+Solving [Project Euler](http://www.projecteuler.net) problems is always a solid
+way to learning a new language.
 
 I might not be tackling these problems the best or most efficient way possible,
 I'm just learning Rust :)
 
 ##Try it out
-Run specific problems run with
+Build with cargo
 ```bash
-./projecteuler --prob 001
+cargo build
 ```
+Run specific problem passing number as argument
+
+```bash
+target/projecteuler --prob 001
+```
+##Solved
+* [Problem 001](src/prob1.rs)
+* [Problem 002](src/prob2.rs)
