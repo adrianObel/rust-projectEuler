@@ -1,7 +1,7 @@
 [package]
 
 name = "rust-projectEuler"
-version = "1.2.1"
+version = "1.6.0"
 authors = ["Adrian Obelmejias obeladrian@gmail.com"]
 
 [[bin]]
