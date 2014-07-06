@@ -19,3 +19,4 @@ target/projecteuler --prob 001
 ##Solved
 * [Problem 001](src/prob1.rs)
 * [Problem 002](src/prob2.rs)
+* [Problem 005](src/prob5.rs)

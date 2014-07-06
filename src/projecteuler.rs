@@ -2,6 +2,7 @@ use std::os;
 
 mod prob1;
 mod prob2;
+mod prob5;
 
 fn main() {
     let arguments = os::args();
@@ -11,6 +12,7 @@ fn main() {
     println!("Answer is: {}", match arguments.as_slice() {
         [_, "--prob", "001"] => prob1::solve(),
         [_, "--prob", "002"] => prob2::solve(),
+        [_, "--prob", "005"] => prob5::solve(),
         _ => fail!("Problem not resolved")
     });
 
