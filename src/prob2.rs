@@ -16,13 +16,13 @@ impl Iterator<uint> for Fibonacchi {
 }
 
 fn fibonacchi() -> Fibonacchi {
-    Fibonacchi { curr: 1, next: 1}
+    Fibonacchi { curr: 1, next: 1 }
 }
 
 pub fn solve() -> String {
     fibonacchi()
-        .take(1000)
-        .filter(|&x| x % 2 == 0 && x < 4_000_000)
+        .take_while(|&x| x < 4_000_000)
+        .filter(|&x| x % 2 == 0)
         .sum()
         .to_str()
 }
