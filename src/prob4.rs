@@ -11,7 +11,7 @@ fn is_palindrome(num: uint) -> bool {
     rev == num
 }
 
-pub fn solve() -> String {
+pub fn solve() -> uint {
     let mut largest = 0;
     for i in range(100, 999) {
         for j in range(100, 999) {
@@ -24,5 +24,5 @@ pub fn solve() -> String {
         }
     }
 
-    largest.to_str()
+    largest
 }
