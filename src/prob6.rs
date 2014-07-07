@@ -1,4 +1,5 @@
 use std::iter::AdditiveIterator;
+use std::num::pow;
 
 pub fn solve() -> uint {
     let limit = 101;
@@ -6,8 +7,7 @@ pub fn solve() -> uint {
         .map(|x| x * x)
         .sum();
 
-    let square_of_sum = range(1u, limit).sum();
-    let square_of_sum = square_of_sum * square_of_sum;
+    let square_of_sum = pow(range(1u, limit).sum(), 2);
 
     square_of_sum - sum_of_square
 }
