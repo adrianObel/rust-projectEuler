@@ -22,17 +22,16 @@ fn is_palindrome(num: uint) -> bool {
 pub fn solve() -> uint {
     print_question();
 
-    let mut largest = 0;
-    for i in range(100, 999) {
-        for j in range(100, 999) {
+    let base = 100u;
+    let limit = 1000;
 
-            let product = i * j;
-
-            if is_palindrome(product) && product > largest{
-                largest = product
-            }
-        }
-    }
-
-    largest
+    range(base, limit)
+        .filter_map(|i| {}
+            range(base, limit)
+                .map(|j| i * j)
+                .filter(|&p| is_palindrome(p))
+                .max()
+        })
+        .max()
+        .unwrap()
 }
