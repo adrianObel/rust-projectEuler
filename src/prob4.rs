@@ -26,7 +26,7 @@ pub fn solve() -> uint {
     let limit = 1000;
 
     range(base, limit)
-        .filter_map(|i| {}
+        .filter_map(|i| {
             range(base, limit)
                 .map(|j| i * j)
                 .filter(|&p| is_palindrome(p))
