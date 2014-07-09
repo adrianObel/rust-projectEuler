@@ -4,6 +4,12 @@ name = "rust-projectEuler"
 version = "1.6.1"
 authors = ["Adrian Obelmejias obeladrian@gmail.com"]
 
+[[lib]]
+
+name = "math"
+path = "lib/math.rs"
+
 [[bin]]
 
 name = "projecteuler"
+path = "src/projecteuler.rs"
