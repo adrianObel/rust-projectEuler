@@ -5,10 +5,8 @@ use self::num::integer::lcm;
 fn print_question() {
     println!("Problem #5");
     println!("===================================");
-    println!("{}{}\n{}{}", "2520 is the smallest number that can be divided ",
-        "by each of the numbers from 1 to 10 without any remainder.",
-        "* What is the smallest positive number that is evenly divisible ",
-        "by all of the numbers from 1 to 20?.\n")
+    print!("What is the smallest positive number that is evenly divisible ");
+    println!("by all of the numbers from 1 to 20?.\n");
 }
 
 fn find(num: uint) -> uint {

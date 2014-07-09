@@ -1,11 +1,10 @@
 fn print_question() {
     println!("Problem #4");
     println!("===================================");
-    println!("{}{}{}\n{}", "A palindromic number reads the same both ways. ",
-        "The largest palindrome made from the product of two 2-digit numbers is",
-        " 9009 = 91 × 99.",
-        "* Find the largest palindrome made from the product of two 3-digit numbers.\n")
+    print!("Find the largest palindrome made from ");
+    println!("the product of two 3-digit numbers.\n");
 }
+
 fn is_palindrome(num: uint) -> bool {
     let mut n = num.clone();
     let mut rev = 0;
