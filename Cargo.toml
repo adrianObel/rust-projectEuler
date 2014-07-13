@@ -12,4 +12,3 @@ path = "src/math/lib.rs"
 [[bin]]
 
 name = "projecteuler"
-# path = "src/projecteuler.rs"
