@@ -5,6 +5,7 @@ mod prob2;
 mod prob4;
 mod prob5;
 mod prob6;
+mod prob7;
 mod prob10;
 
 fn main() {
@@ -18,6 +19,7 @@ fn main() {
         [_, "--prob", "004"] => prob4::solve(),
         [_, "--prob", "005"] => prob5::solve(),
         [_, "--prob", "006"] => prob6::solve(),
+        [_, "--prob", "007"] => prob7::solve(),
         [_, "--prob", "010"] => prob10::solve(),
         _ => fail!("Problem not resolved")
     });

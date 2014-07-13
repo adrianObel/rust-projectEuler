@@ -23,4 +23,5 @@ target/projecteuler --prob 001
 * [Problem 004](src/prob4.rs)
 * [Problem 005](src/prob5.rs)
 * [Problem 006](src/prob6.rs)
+* [Problem 007](src/prob7.rs)
 * [Problem 010](src/prob10.rs)
