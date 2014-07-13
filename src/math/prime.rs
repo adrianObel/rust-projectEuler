@@ -1,4 +1,5 @@
-use std::mem;
+use std::mem::replace;
+use std::iter::range_step;
 
 pub struct Prime {
     curr: uint,
@@ -15,9 +16,9 @@ impl Iterator<uint> for Prime {
     fn next(&mut self) -> Option<uint> {
 
         let new_next = calculate_next_prime(self.next);
-        let new_curr = mem::replace(&mut self.next, new_next);
+        let new_curr = replace(&mut self.next, new_next);
 
-        Some(mem::replace(&mut self.curr, new_curr))
+        Some(replace(&mut self.curr, new_curr))
     }}
 
 fn calculate_next_prime(start_value: uint) -> uint {
@@ -33,7 +34,16 @@ fn calculate_next_prime(start_value: uint) -> uint {
 }
 
 pub fn is_prime(num: uint) -> bool {
+    let root = (num as f64).sqrt().ceil() as uint;
 
+    if num == 2 || num == 3 { return true; }
+    if num % 2 == 0 { return false; }
+
+    for i in range_step(3u, root + 1, 2) {
+        if num % i == 0 { return false; }
+    }
+
+    true
 }
 
 // Tests
@@ -41,6 +51,6 @@ pub fn is_prime(num: uint) -> bool {
 #[test]
 fn test_is_prime() {
     assert!(is_prime(3) == true);
-    assert!(is_prime(4) == true);
+    assert!(is_prime(4) == false);
     assert!(is_prime(9) == false);
 }
