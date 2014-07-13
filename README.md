@@ -18,10 +18,10 @@ Run specific problem passing number as argument
 target/projecteuler --prob 001
 ```
 ##Solved
-* [Problem 001](src/prob1.rs)
-* [Problem 002](src/prob2.rs)
-* [Problem 004](src/prob4.rs)
-* [Problem 005](src/prob5.rs)
-* [Problem 006](src/prob6.rs)
-* [Problem 007](src/prob7.rs)
-* [Problem 010](src/prob10.rs)
+* [Problem 001](src/bin/prob1.rs)
+* [Problem 002](src/bin/prob2.rs)
+* [Problem 004](src/bin/prob4.rs)
+* [Problem 005](src/bin/prob5.rs)
+* [Problem 006](src/bin/prob6.rs)
+* [Problem 007](src/bin/prob7.rs)
+* [Problem 010](src/bin/prob10.rs)
