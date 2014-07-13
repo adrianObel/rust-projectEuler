@@ -1,5 +1,5 @@
 use std::mem::replace;
-use std::iter::range_step;
+use std::iter::range_step_inclusive;
 
 pub struct Prime {
     curr: uint,
@@ -39,7 +39,7 @@ pub fn is_prime(num: uint) -> bool {
     if num == 2 || num == 3 { return true; }
     if num % 2 == 0 { return false; }
 
-    for i in range_step(3u, root + 1, 2) {
+    for i in range_step_inclusive(3u, root, 2) {
         if num % i == 0 { return false; }
     }
 
