@@ -1,10 +1,4 @@
-install:
-  - curl -O http://static.rust-lang.org/dist/rust-nightly-x86_64-unknown-linux-gnu.tar.gz
-  - tar -zxf rust-nightly-x86_64-unknown-linux-gnu.tar.gz
-  - (cd rust-nightly-x86_64-unknown-linux-gnu/ && sudo ./install.sh)
-  - git clone --recursive https://github.com/rust-lang/cargo
-  - cd cargo
-  - make && sudo make install
+language: rust
 
 script:
   - cargo build --verbose
